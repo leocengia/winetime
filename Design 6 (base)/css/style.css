@@ -6,6 +6,7 @@ body, html {
 	font-weight: 300;
 	width: 100% !important;
 	height: 100% !important;
+	background-color: white;
 }
 h2 {
 	margin: 0 0 20px 0;
@@ -38,7 +39,7 @@ p.intro {
 	line-height: 24px;
 }
 a {
-	color: #8eb640;
+	color: #ffffff;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -74,7 +75,7 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	background: #8eb640;
+	background: #ffffff;
 	margin: 0;
 	margin-bottom: 40px;
 	border: 0;
@@ -101,7 +102,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 #menu a.navbar-brand {
 	font-family: 'Dancing Script', cursive;
 	font-size: 36px;
-	color: #8eb640;
+	color: #ffffff;
 	font-weight: 700;
 	letter-spacing: 1px;
 }
@@ -116,7 +117,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin: 10px 15px 0 15px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color: #8eb640;
+	color: #ffffff;
 }
 .on {
 	background-color: #262626 !important;
@@ -124,15 +125,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	padding: 10px 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #8eb640 !important;
+	color: #ffffff !important;
 	background-color: transparent;
 }
 .navbar-toggle {
 	border-radius: 0;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #8eb640;
-	border-color: #8eb640;
+	background-color: #ffffff;
+	border-color: #ffffff;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
@@ -154,8 +155,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .btn-custom {
 	text-transform: uppercase;
-	color: #fff;
-	background-color: #72a411;
+	color: #000000;
+	background-color: #ffd278;
 	border: 0;
 	padding: 14px 20px;
 	margin: 0;
@@ -168,22 +169,23 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
-	background-color: #628d0f;
+	background-color: #795100;
 }
 /* Header Section */
 .intro {
 	display: table;
 	width: 100%;
+	height: 1020px;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) no-repeat center center;
-	background-color: #e5e5e5;
+	/* background: url(../img/intro-bg.jpg) no-repeat center center; RIATTIVARE SE si vuole sostituire il colore con un immagine */ 
+	background-color: #000000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
 .intro .overlay {
-	background: rgba(0,0,0,0.4);
+	background: rgba(0,0,0,0.4); /*Questo parametro definisce la sfocatura dell'immagine impostata nel blocco superiore*/
 }
 .intro h1 {
 	font-family: 'Dancing Script', cursive;
@@ -205,10 +207,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-bottom: 40px;
 }
 header .intro-text {
-	padding-top: 250px;
+	padding-top: 270px;
 	padding-bottom: 200px;
 	text-align: center;
 }
+
+
 /* About Section */
 #about {
 	padding: 120px 0;
@@ -277,11 +281,11 @@ ol.type li a {
 }
 ol.type li a.active {
 	color: #fff;
-	background-color: #8eb640;
+	background-color: #ffd278;
 }
 ol.type li a:hover {
 	color: #fff;
-	background-color: #8eb640;
+	background-color: #9e6900;
 }
 .isotope-item {
 	z-index: 2
@@ -369,16 +373,16 @@ ol.type li a:hover {
 #call-reservation {
 	padding: 90px 0;
 	color: #fff;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8eb640+50,779936+100 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,779936+100 */
 	background: rgb(142,182,64); /* Old browsers */
 	background: -moz-linear-gradient(top, rgba(142,182,64,1) 50%, rgba(119,153,54,1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(142,182,64,1) 50%, rgba(119,153,54,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(142,182,64,1) 50%, rgba(119,153,54,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eb640', endColorstr='#779936', GradientType=0 ); /* IE6-9 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#779936', GradientType=0 ); /* IE6-9 */
 }
 #call-reservation .overlay {
 	padding: 80px 0;
-	background: #8eb640;
+	background: #ffffff;
 }
 #call-reservation h2 {
 	font-family: 'Open Sans', sans-serif;
@@ -476,13 +480,13 @@ color: #777;
 
 
 
-/* Footer Section*/
+/* Footer Section Vecchia
 #footer {
 	background: #262626;
 	padding: 50px 0 0 0;
 }
 #footer h3 {
-	color: #8eb640;
+	color: #ffffff;
 	font-weight: 400;
 	font-size: 18px;
 	text-transform: uppercase;
@@ -491,12 +495,11 @@ color: #777;
 #footer .copyrights {
 	padding: 20px 0;
 	margin-top: 50px;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#779936+0,8eb640+50 */
-	background: rgb(119,153,54); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', endColorstr='#8eb640', GradientType=0 ); /* IE6-9 */
+	background: rgb(119,153,54); 
+	background: -moz-linear-gradient(top, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); 
+	background: -webkit-linear-gradient(top, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); 
+	background: linear-gradient(to bottom, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', endColorstr='#ffffff', GradientType=0 ); 
 }
 #footer .social {
 	margin: 20px 0 30px 0;
@@ -524,5 +527,232 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', end
 #footer a:hover {
 	color: #333;
 }
+*/
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+	background: #000000;
+	padding: 0 0 30px 0;
+	color: #ffffff;
+	font-size: 14px;
+  }
+  
+  #footer .footer-top {
+	background: #292929;
+	border-bottom: 1px solid #ffffff;
+	padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+	font-size: 24px;
+	margin: 0 0 20px 0;
+	padding: 2px 0 2px 0;
+	line-height: 1;
+	font-weight: 700;
+  }
+  
+  #footer .footer-top .footer-info p {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0;
+	font-family: "Roboto", sans-serif;
+	color: #ffffff;
+  }
+  
+  #footer .footer-top .social-links a {
+	font-size: 18px;
+	display: inline-block;
+	background: #000000;
+	color: #ffffff;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+	background: #000000;
+	color: #ffffff;
+	text-decoration: none;
+  }
+  
+  #footer .footer-top h4 {
+	font-size: 16px;
+	font-weight: 600;
+	color: #ffffff;
+	position: relative;
+	padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+	padding-right: 2px;
+	color: #000000;
+	font-size: 18px;
+	line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+	padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+	color: #ffffff;
+	transition: 0.3s;
+	display: inline-block;
+	line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+	color: #000000;
+  }
+  
+  #footer .footer-top .footer-newsletter form {
+	margin-top: 30px;
+	background: #ffffff;
+	padding: 6px 10px;
+	position: relative;
+	border-radius: 4;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type=email] {
+	border: 0;
+	padding: 4px;
+	width: calc(100% - 110px);
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type=submit] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border: 0;
+	background: none;
+	font-size: 16px;
+	padding: 0 20px;
+	background: #000000;
+	color: #ffffff;
+	transition: 0.3s;
+	border-radius: 4;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type=submit]:hover {
+	background: #000000;
+  }
+  
+  #footer .copyright {
+	text-align: center;
+	padding-top: 30px;
+  }
+  
+  #footer .credits {
+	padding-top: 10px;
+	text-align: center;
+	font-size: 13px;
+	color: #ffffff;
+  }
+  
+  body {
+    background: #000;
+}
 
 
+
+
+/* css per la freccia animata della home */
+.center-con {
+    display: flex;
+    height: 1vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.round {
+    position: relative;
+    border: 3px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+span {
+    z-index: 999;
+    height: 3px;
+    margin:1px;
+    width: 30px;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-225deg);
+}
