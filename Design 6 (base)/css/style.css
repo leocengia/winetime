@@ -794,4 +794,62 @@ span:nth-child(4) {
 
 }
 
-  
+
+/*SEZIONE ABOUT US importata da barber (da sistemare)*/
+.nav-pills {
+    border: 1px solid #e1e1e1;
+}
+
+.nav-pills > li {
+    width: 50%;
+    padding: 10px;
+    float: left;
+    margin: 0 !important;
+}
+
+.nav-pills > li > a {
+    margin: 0!important;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.about-tab .nav-tabs{
+	border: none;
+	padding: 20px;
+	display: block;
+	text-align: center;
+}
+.about-tab .nav-tabs > li{
+	margin: 0px;
+	display: inline-block;
+	text-align: center;
+	float: none;
+}
+
+.about-tab .nav-tabs > li a{
+	border-radius: 10px;
+	border: none;
+}
+body.barber_version .about-tab .nav-tabs > li a:hover{
+	color: #ffffff;
+	background: #111111;
+	border: none;
+}
+.about-tab .nav-tabs > li.active > a{
+	border: none;
+	background: #bb9d52;
+	color: #ffffff;
+}
+
+.about-tab .tab-content > .tab-pane{
+	padding: 20px;
+	text-align: center;
+}
+.about-tab .tab-content > .tab-pane ul li{
+	display: inline-block;
+	margin: 0px 10px;
+}
+.about-tab .tab-content > .tab-pane ul li i{
+	margin-right: 15px;
+}
+
