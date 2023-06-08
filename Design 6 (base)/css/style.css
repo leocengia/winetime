@@ -95,7 +95,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .mainLogoResponsive{
 
 	
-	max-width: 10%;
+	max-width: 75%;
 	height: auto;
 
 }
@@ -197,23 +197,27 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	-o-background-size: cover;
 }
 .intro .overlay {
-	background: rgba(0,0,0,0.6); /*Questo parametro definisce la sfocatura dell'immagine impostata nel blocco superiore*/
+	background: rgba(0,0,0,0.75); /*Questo parametro definisce la sfocatura dell'immagine impostata nel blocco superiore*/
 	width: 100%;
 	height: 100%;
 	padding: 0;
 }
 .intro h1 {
-	font-family: 'Times New Roman';
+	
+	/*font-family: 'Times New Roman';   questa sezione modifica il titolo del sito*/   
+	font-family: "Trirong", serif;
 	color: #fff;
 	font-size: 7em;
-	font-weight: 700;
+	font-weight: 0;
 	margin-top: 0;
 	margin-bottom: 10px;
 }
-.intro span {
-	color: #a7c44c;
+
+span {
+
 	font-weight: 600;
 }
+
 .intro p {
 	color: #fff;
 	font-size: 32px;
@@ -640,7 +644,7 @@ color: #777;
     border-radius: 100%;
 }
 
-span {
+span{
     z-index: 999;
     height: 3px;
     margin:0px;
@@ -805,7 +809,7 @@ span:nth-child(4) {
 }
 
 #ffm{
-	margin: 0 10px;
+	margin: 10px;
 }
 
 #btn-cell{
