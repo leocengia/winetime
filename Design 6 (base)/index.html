@@ -3,14 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wine Time</title>
-<meta name="description" content="">
-<meta name="author" content="">
-
-<!-- Favicons ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
@@ -20,38 +12,14 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 -->
 
-<!-- Icon Font Stylesheet -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-<!-- Libraries Stylesheet -->
-<link href="lib/animate/animate.min.css" rel="stylesheet">
-<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-<link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
 <!-- Customized Bootstrap Stylesheet -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Google Web Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-
 <!-- Stylesheet ================================================== -->
 <link rel="stylesheet" type="text/css"  href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -67,9 +35,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about" class="page-scroll">Chi Siamo</a></li>
+        <li><a href="#chiSiamo" class="page-scroll">Chi Siamo</a></li>
         <li><a href="#portfolio" class="page-scroll">Galleria</a></li>
-        <li><a href="#call-reservation" class="page-scroll">Contattaci</a></li>
+        <li><a href="#contact" class="page-scroll">Contattaci</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -88,12 +56,12 @@
             <p>Vino e Cucina Italiana</p>
 
               
-            <a href="#about" class="btn btn-custom btn-lg page-scroll">scopri di più</a> </div>
+            <a href="#chiSiamo" class="btn btn-custom btn-lg page-scroll">scopri di più</a> </div>
 
             <!-- quì devo aggiungere degli spazi -->
               <!-- round è la freccia animata in css-->
               <div class="center-con">
-                <div class="round" onclick="window.location.href='#about'">
+                <div id="Round" class="page-scroll" onclick="window.location.href='#chiSiamo'">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -107,60 +75,64 @@
   </div>
 </header>
 
-
-<!-- About Section -->
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-6 ">
-        <div class="about-img"><img src="img/about.jpg" class="img-responsive" alt=""></div>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="about-text">
-          <h2>Il nostro ristorante</h2>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <h3>Awarded Chefs</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- SEZIONE CHE CONTIENE ABOUT US BARBER (css importato ma da modificare), funziona già anyway -->
-<div class="row">
-  <div class="col-md-12">
     <div class="about-tab">
-      <ul class="nav nav-tabs">
-        <li class="active"><a href="#tab_a" data-toggle="tab">Our Mission</a></li>
-        <li><a href="#tab_b" data-toggle="tab">Why Us?</a></li>
-        <li><a href="#tab_c" data-toggle="tab">About Us</a></li>								
-      </ul>
-      <div class="tab-content">
+      <div id="chiSiamo" class="tab-content">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab_a" data-toggle="tab">Chi Siamo</a></li>
+          <li><a href="#tab_b" data-toggle="tab">Dove Trovarci</a></li>
+          <li><a href="#tab_c" data-toggle="tab">Perchè Sceglierci</a></li>								
+        </ul>
         <div class="tab-pane fade in active" id="tab_a">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque tortor mi, eget mattis velit sagittis id. Duis ornare mauris eu eros interdum, vitae finibus arcu ultricies. Donec vitae felis eleifend, dignissim erat a, pretium diam. Donec eu massa odio. Suspendisse et ornare lacus, pharetra imperdiet ligula.</p>
-          <p>Vestibulum ac quam id lorem semper condimentum. Nulla vel ligula turpis. Nullam luctus, mi nec rhoncus gravida, tortor est semper purus, a feugiat sapien odio non urna. Fusce pellentesque neque ut nisi rhoncus imperdiet. Sed eu purus vel turpis consectetur convallis. Donec a dolor tellus. Phasellus dignissim erat nec ipsum condimentum sollicitudin. </p>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-md-6 ">
+                  <div class="about-img"><img src="img/about.jpg" class="img-responsive" alt=""></div>
+                </div>
+                <div id="ttx" class="col-xs-12 col-md-6">
+                    <h2>Il nostro ristorante</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+                    <h3>Awarded Chefs</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+                </div>
+            </div>
+          </div>
         </div>
         <div class="tab-pane fade" id="tab_b">
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-          <ul>
-            <li><i class="fa fa-circle-o" aria-hidden="true"></i>User Experince</li>
-            <li><i class="fa fa-circle-o" aria-hidden="true"></i>Full Devices</li>
-            <li><i class="fa fa-circle-o" aria-hidden="true"></i>Awesome Design</li>
-            <li><i class="fa fa-circle-o" aria-hidden="true"></i>Visual Impact</li>
-            <li><i class="fa fa-circle-o" aria-hidden="true"></i>100% Sincronized</li>
-            <li><i class="fa fa-circle-o" aria-hidden="true"></i>Custom Support</li>
-          </ul>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-md-6 ">
+                  <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.7618078565542!2d9.209690576660643!3d45.51487333005571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c70de5610519%3A0x3bc68a29f8c0f3a7!2sWinetime-sushiidea!5e0!3m2!1sen!2sit!4v1686091011514!5m2!1sen!2sit" 
+                    width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+                <div id="ttx" class="col-xs-12 col-md-6">
+                    <h2>Il nostro ristorante</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+                    <h3>Awarded Chefs</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+                </div>
+              </div>
+          </div>
         </div>
         <div class="tab-pane fade" id="tab_c">
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-md-6 ">
+                  <div class="about-img"><img src="img/about.jpg" class="img-responsive" alt=""></div>
+                </div>
+                <div id="ttx" class="col-xs-12 col-md-6">
+                    <h2>Il nostro ristorante</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+                    <h3>Awarded Chefs</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+                </div>
+              </div>
+          </div> 
         </div>
       </div><!-- tab content -->
     </div>
-  </div><!-- end col -->
-</div><!-- end row -->
-
 
 <!-- Portfolio Section -->
 <div id="portfolio">
@@ -301,20 +273,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-<!-- Call Reservation Section --> <!-- NON TOCCARE xche altrimeni succedono casini con la barra di navigazione -->
-<div id="call-reservation" class="text-center">
-  <div class="container">
-    <div class="map-responsive">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.7618078565542!2d9.209690576660643!3d45.51487333005571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c70de5610519%3A0x3bc68a29f8c0f3a7!2sWinetime-sushiidea!5e0!3m2!1sen!2sit!4v1686091011514!5m2!1sen!2sit" 
-      width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-</div>
-
 
 <!-- Contact Section --> 
 <div id="contact" class="text-center">
