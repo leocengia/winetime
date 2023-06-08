@@ -3,6 +3,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wine Time</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
@@ -29,18 +31,17 @@
   <div class="container"> 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <button id="btn-cell" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#elenco"> </button>
       <a class="navbar-brand page-scroll" href="#page-top">Wine Time</a> </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="elenco">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#chiSiamo" class="page-scroll">Chi Siamo</a></li>
         <li><a href="#portfolio" class="page-scroll">Galleria</a></li>
         <li><a href="#contact" class="page-scroll">Contattaci</a></li>
       </ul>
     </div>
-    <!-- /.navbar-collapse --> 
   </div>
 </nav>
 
@@ -52,16 +53,18 @@
       <div class="container">
         <div class="row">
           <div class="intro-text">
+
+            <!--<img src="img/img_custom/winetime_logo.jpg" alt="logo" class="mainLogoResponsive">-->
             <h1>Wine Time</h1>
             <p>Vino e Cucina Italiana</p>
 
-              
+            
             <a href="#chiSiamo" class="btn btn-custom btn-lg page-scroll">scopri di più</a> </div>
 
-            <!-- quì devo aggiungere degli spazi -->
+            
               <!-- round è la freccia animata in css-->
               <div class="center-con">
-                <div id="Round" class="page-scroll" onclick="window.location.href='#chiSiamo'">
+                <div class="round" onclick="window.location.href='#chiSiamo'">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -76,12 +79,13 @@
 </header>
 
 <!-- SEZIONE CHE CONTIENE ABOUT US BARBER (css importato ma da modificare), funziona già anyway -->
-    <div class="about-tab">
-      <div id="chiSiamo" class="tab-content">
+    <div id="chiSiamo" class="about-tab">
+      <div class="tab-content">
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#tab_a" data-toggle="tab">Chi Siamo</a></li>
-          <li><a href="#tab_b" data-toggle="tab">Dove Trovarci</a></li>
-          <li><a href="#tab_c" data-toggle="tab">Perchè Sceglierci</a></li>								
+          <li id="ffm" class="active"><a class="btn-about" href="#tab_a" data-toggle="tab">CHI SIAMO</a></li>
+          <li id="ffm"><a class="btn-about" href="#tab_b" data-toggle="tab">DOVE TROVARCI</a></li>
+          <li id="ffm"><a class="btn-about" href="#tab_c" data-toggle="tab">PRENOTA ORA</a></li>		
+          <li id="ffm"><a class="btn-about" href="#tab_d" data-toggle="tab">IL MENU'</a></li>								
         </ul>
         <div class="tab-pane fade in active" id="tab_a">
             <div class="container">
@@ -91,9 +95,9 @@
                 </div>
                 <div id="ttx" class="col-xs-12 col-md-6">
                     <h2>Il nostro ristorante</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-                    <h3>Awarded Chefs</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+                    <p>un luogo unico dove la passione per il cibo e l'ospitalità si fondono per creare un'esperienza culinaria indimenticabile.</p>
+                    <h3>Un luogo unico</h3>
+                    <p>Utilizziamo solo ingredienti di altissima qualità, privilegiando prodotti locali e stagionali, per garantire freschezza e autenticità in ogni piatto. Dalla selezione dei migliori formaggi e salumi, alla scelta accurata delle verdure fresche, agli ingredienti di mare appena pescati, tutto viene curato con la massima attenzione per offrire una gustosa esperienza culinaria.</p>
                 </div>
             </div>
           </div>
@@ -109,9 +113,12 @@
                 </div>
                 <div id="ttx" class="col-xs-12 col-md-6">
                     <h2>Il nostro ristorante</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-                    <h3>Awarded Chefs</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+                    <p>situato in una posizione privilegiata nel cuore di Milano. Ci troviamo in Piazza della Trivulziana, 
+                      nel quartiere 20126 di Milano, nella provincia di Milano, Italia.</p>
+                    <h3>Orario di Apertura</h3>
+                    <p>Lun - Dom</p>
+                    <p>12:00 - 15:00</p>
+                      <p>18:30 - 23:30</p>
                 </div>
               </div>
           </div>
@@ -123,14 +130,29 @@
                   <div class="about-img"><img src="img/about.jpg" class="img-responsive" alt=""></div>
                 </div>
                 <div id="ttx" class="col-xs-12 col-md-6">
-                    <h2>Il nostro ristorante</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-                    <h3>Awarded Chefs</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
-                </div>
+                    <iframe src="https://widget.thefork.com/69b61216-2ee8-4f04-90da-91e5069db9bf" style="width: 100%; min-height:800px; border:none; overflow:scroll;"></iframe>
+                    </div>
               </div>
           </div> 
         </div>
+        <div class="tab-pane fade" id="tab_d">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-6 ">
+                <div class="map-responsive">
+                  <iframe src="img/img_custom/Qr-menu.png" 
+                  width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+              <div id="ttx" class="col-xs-12 col-md-6">
+                  <h2>Il nostro menù</h2>
+                  <p>scannerizza il qr-code, e scegli cosa ordinare!</p>
+                  <h3>Awarded Chefs</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+              </div>
+            </div>
+        </div>
+      </div>
       </div><!-- tab content -->
     </div>
 
@@ -161,15 +183,6 @@
     </div>
     <div class="row">
       <div class="portfolio-items">
-        <div class="col-sm-6 col-md-4 col-lg-4 breakfast">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Dish Name</h4>
-              </div>
-              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
         <div class="col-sm-6 col-md-4 col-lg-4 dinner">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
@@ -177,15 +190,6 @@
                 <h4>Dish Name</h4>
               </div>
               <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 breakfast">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Dish Name</h4>
-              </div>
-              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4 breakfast">
@@ -204,15 +208,6 @@
                 <h4>Dish Name</h4>
               </div>
               <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 lunch">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Dish Name" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Dish Name</h4>
-              </div>
-              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4 lunch">
@@ -321,14 +316,14 @@
             Piazza della Trivulziana, 4
           <br>
           MI, Italia 20126<br><br>
-            <strong>Phone:</strong> +39 347 719 8999<br>
-            <strong>Email:</strong> info@winetime.com<br>
+            <strong>Phone:</strong> +39 02 25565222<br>
+            <strong>Email:</strong> sushiidea@visiesorrisi.com<br>
           </p>
+          <br>
           <div class="social-links mt-3">
-            <a href="#" class="twitter"></a>
-            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.instagram.com/sushiideamilano/?hl=cs" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/people/Sushiidea/100063708294954/?locale=it_IT" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
           </div>
         </div>
 

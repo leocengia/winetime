@@ -91,6 +91,16 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
+
+.mainLogoResponsive{
+
+	
+	max-width: 10%;
+	height: auto;
+
+}
+
+
 /* Navigation */
 #menu {
 	padding: 20px;
@@ -101,7 +111,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	border-color: rgba(231, 231, 231, 0);
 }
 #menu a.navbar-brand {
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Times New Roman'; /* FONT titolo navbar*/
 	font-size: 36px;
 	color: #ffffff;
 	font-weight: 700;
@@ -131,6 +141,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .navbar-toggle {
 	border-radius: 0;
+	height: 100%;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: #ffffff;
@@ -144,7 +155,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .section-title .overlay {
 	padding: 80px 0;
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.85);
 }
 .section-title p {
 	font-size: 22px;
@@ -186,15 +197,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	-o-background-size: cover;
 }
 .intro .overlay {
-	background: rgba(0,0,0,0.85); /*Questo parametro definisce la sfocatura dell'immagine impostata nel blocco superiore*/
+	background: rgba(0,0,0,0.6); /*Questo parametro definisce la sfocatura dell'immagine impostata nel blocco superiore*/
 	width: 100%;
-	height: 1020px;
+	height: 100%;
 	padding: 0;
 }
 .intro h1 {
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Times New Roman';
 	color: #fff;
-	font-size: 10em;
+	font-size: 7em;
 	font-weight: 700;
 	margin-top: 0;
 	margin-bottom: 10px;
@@ -357,7 +368,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	background: #ffffff;
 }
 #call-reservation h2 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Times New Roman';
 	color: #fff;
 	font-weight: 400;
 	margin: 0;
@@ -398,7 +409,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 label {
 	font-size: 12px;
 	font-weight: 400;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Times New Roman'; /*FONT di non so bene cosa*/
 	float: left;
 }
 #contact .form-control {
@@ -613,16 +624,20 @@ color: #777;
     align-items: center;
     justify-content: center;
 	margin-bottom: 140px;
-	margin-top: 130px;
+	margin-top: 50px;
 }
 
-#Round {
-    position: relative;
+.round {
+    position: absolute;
+	top: 93%;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+
     border: 3px solid #fff;
     width: 50px;
     height: 50px;
     border-radius: 100%;
-	transition: all 20s;
 }
 
 span {
@@ -714,9 +729,9 @@ span:nth-child(4) {
 
 
 /*SEZIONE ABOUT US importata da barber (da sistemare)*/
-.about-tab{
-	padding-top: 2%;
-	padding-bottom: 3%;
+.about-tab{ 
+	padding-top: 6%; /*spazio sopra alla sezione about us*/ 
+	padding-bottom: 6%; /*spazio sotto alla sezione about us*/ 
 }
 
 .nav-pills {
@@ -750,17 +765,17 @@ span:nth-child(4) {
 }
 
 .about-tab .nav-tabs > li a{
-	border-radius: 10px;
+	border-radius: 0px;
 	border: none;
 }
-body.barber_version .about-tab .nav-tabs > li a:hover{
-	color: #ffffff;
-	background: #111111;
+.about-tab .nav-tabs > li a:hover{
 	border: none;
+	background: #9e6900;
+	color: #ffffff;
 }
 .about-tab .nav-tabs > li.active > a{
 	border: none;
-	background: #bb9d52;
+	background: #ffd278;
 	color: #ffffff;
 }
 
@@ -776,6 +791,26 @@ body.barber_version .about-tab .nav-tabs > li a:hover{
 	margin-right: 15px;
 }
 
+.btn-about{
+	background-color: #eee;
+	color: #999;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	padding: 12px 24px;
+}
+
 #ttx{
 	text-align: justify;
+}
+
+#ffm{
+	margin: 0 10px;
+}
+
+#btn-cell{
+	background-color: #9e6900;
+	border: 0;
+	background: url(../img/img_custom/menu.png) no-repeat center center; 
+	-webkit-background-size: cover;
 }
