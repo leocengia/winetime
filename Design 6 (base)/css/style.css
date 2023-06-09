@@ -105,7 +105,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	transition: all 0.8s;
 }
 #menu.navbar-default {
-	background-color: rgba(248, 248, 248, 0);
+	background-color: rgba(248, 248, 248, 0); 
 	border-color: rgba(231, 231, 231, 0);
 }
 #menu a.navbar-brand {
@@ -232,6 +232,7 @@ header .intro-text {
 /* Portfolio Section */
 #portfolio {
 	padding: 0 0 120px 0;
+	padding-bottom: 0%;
 }
 #portfolio .section-title {
 	background: #444 url(../img/img_custom/gallery-bg2.png) center center no-repeat fixed;
@@ -386,84 +387,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
-
-/* Contact Section */
-#contact {
-	padding: 100px 0 60px 0;
-	background: #F6F6F6;
-}
-#contact .section-title p {
-	color: #777;
-}
-#contact form {
-	padding: 0;
-}
-#contact h3 {
-	text-transform: uppercase;
-	font-size: 20px;
-	font-weight: 400;
-	color: #555;
-}
-#contact .text-danger {
-	color: #cc0033;
-	text-align: left;
-}
-label {
-	font-size: 12px;
-	font-weight: 400;
-	font-family: 'Times New Roman'; /*FONT di non so bene cosa*/
-	float: left;
-}
-#contact .form-control {
-	display: block;
-	width: 100%;
-	padding: 6px 12px;
-	font-size: 16px;
-	line-height: 1.42857143;
-	color: #444;
-	background-color: #fff;
-	background-image: none;
-	border: 1px solid #ddd;
-	border-radius: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	-webkit-transition: none;
-	-o-transition: none;
-	transition: none;
-}
-#contact .form-control:focus {
-	border-color: #999;
-	outline: 0;
-	-webkit-box-shadow: transparent;
-	box-shadow: transparent;
-}
-.form-control::-webkit-input-placeholder {
-color: #777;
-}
-.form-control:-moz-placeholder {
-color: #777;
-}
-.form-control::-moz-placeholder {
-color: #777;
-}
-.form-control:-ms-input-placeholder {
-color: #777;
-}
-#contact .contact-item {
-	margin: 20px 0 40px 0;
-}
-#contact .contact-item span {
-	font-weight: 400;
-	color: #aaa;
-	text-transform: uppercase;
-	margin-bottom: 6px;
-	display: inline-block;
-}
-#contact .contact-item p {
-	font-size: 16px;
-}
-
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -475,7 +398,7 @@ color: #777;
   }
   
   #footer .footer-top {
-	background: #292929;
+	background-color: #262626;
 	border-bottom: 1px solid #ffffff;
 	padding: 60px 0 30px 0;
   }
@@ -711,7 +634,7 @@ span:nth-child(4) {
 
     position:relative;
 
-    height:0;
+    height:100%;
 
 }
 
@@ -815,4 +738,44 @@ span:nth-child(4) {
 	border: 0;
 	background: url(../img/img_custom/menu.png) no-repeat center center; 
 	-webkit-background-size: cover;
+}
+
+
+
+
+
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding-top: 120px;
+	padding-bottom: 120px;
+  }
+  
+  .grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+  }
+
+#cont1{
+	background-color: #a39090;
+	padding: 0px;
+}
+
+#cont2{
+	background-color: #262626;
+}
+
+#cont3{
+	background-color: #4e5681;
+	background-image: url("../img/about.jpg");
+}
+
+#btn-phone{
+	margin: 10px;
+	background-color: rgba(153, 202, 79, 0.466);
+	border: 0;
 }
