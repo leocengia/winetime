@@ -539,6 +539,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     background: #000;
 }
 
+#mno{
+	height: 100%;
+	width: 100%;
+}
+
+#qrm{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
 
 
 
@@ -636,6 +647,8 @@ span:nth-child(4) {
 
     height:100%;
 
+	width: 100%;
+
 }
 
 .map-responsive iframe{
@@ -678,9 +691,9 @@ span:nth-child(4) {
 
 .about-tab .nav-tabs{
 	border: none;
-	padding: 20px;
 	display: block;
 	text-align: center;
+	padding-bottom: 30px;
 }
 .about-tab .nav-tabs > li{
 	margin: 0px;
@@ -760,6 +773,24 @@ span:nth-child(4) {
 	position: relative;
   }
 
+  @media only screen and (max-width: 600px) {
+	.grid-container {
+		display: grid;
+	grid-template-columns: none;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	}
+
+	.grid-item {
+		background-color: rgba(255, 255, 255, 0.8);
+		padding: 20px;
+		font-size: 30px;
+		text-align: center;
+		position: relative;
+	  }
+  }
+
+
 #cont1{
 	background-color: #a39090;
 	padding: 0px;
@@ -767,15 +798,41 @@ span:nth-child(4) {
 
 #cont2{
 	background-color: #262626;
+	padding: 0px;
 }
 
 #cont3{
 	background-color: #4e5681;
+	padding: 0;
 	background-image: url("../img/about.jpg");
+background-size: cover;
+background-position: center center;
+}
+
+@media only screen and (max-width: 600px) {
+
+	#cont1{
+		background-color: #a39090;
+		padding: 0px;
+	}
+	
+	#cont2{
+		background-color: #262626;
+		padding: 0px;
+	}
+
+	#cont3{
+		height: 255px;
+	}
 }
 
 #btn-phone{
 	margin: 10px;
+	margin-bottom: 20px;
 	background-color: rgba(153, 202, 79, 0.466);
 	border: 0;
+}
+
+#chiSiamo{
+	padding-top: 60px;
 }
