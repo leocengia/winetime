@@ -112,7 +112,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-family: 'Times New Roman'; /* FONT titolo navbar*/
 	font-size: 36px;
 	color: #ffffff;
-	font-weight: 700;
 	letter-spacing: 1px;
 }
 #menu.navbar-default .navbar-nav > li > a {
@@ -835,4 +834,8 @@ background-position: center center;
 
 #chiSiamo{
 	padding-top: 60px;
+}
+
+#tr{
+	animation-duration: 4s;
 }
