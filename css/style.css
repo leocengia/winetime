@@ -660,38 +660,6 @@ span:nth-child(4) {
 }
 
 
-
-
-/* css per la mappa responsive */
-.map-responsive{
-
-    overflow:hidden;
-
-    padding-bottom:56.25%;
-
-    position:relative;
-
-    height:100%;
-
-	width: 100%;
-
-}
-
-.map-responsive iframe{
-
-    left:0;
-
-    top:0;
-
-    height:100%;
-
-    width:100%;
-
-    position:absolute;
-
-}
-
-
 /*SEZIONE ABOUT US importata da barber (da sistemare)*/
 .about-tab{ 
 	padding-top: 6%; /*spazio sopra alla sezione about us*/ 
@@ -782,7 +750,9 @@ span:nth-child(4) {
 
 @media only screen and (max-width: 600px) {
 	#ffm{
-		width: 50%;
+		width: 40%;
+		margin: 0;
+		margin-bottom: 10px;
 	}
 
 	.btn-about{
@@ -791,14 +761,44 @@ span:nth-child(4) {
 	}
 }
 
+
+/* css per la mappa responsive */
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:100%;
+
+	width: 100%;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
+
 .grid-container {
 	display: grid; 
   grid-auto-flow: row dense; 
   grid-auto-columns: 1fr; 
   grid-auto-rows: 1fr; 
-  grid-template-columns: 50% 50%; 
+  grid-template-columns: 5% 45% 45% 5%; 
   gap: 0px 0px; 
-	padding-top: 120px;
+	padding-top: 50px;
 	padding-bottom: 120px;
   }
   
@@ -829,7 +829,7 @@ span:nth-child(4) {
 
 
 #cont1{
-	background-color: #a39090;
+	background-color: #000000;
 	padding: 0px;
 }
 
@@ -851,12 +851,11 @@ span:nth-child(4) {
 	}
 }
 
-#btn-phone{
-	margin: 10px;
-	margin-bottom: 20px;
-	background-color: rgba(153, 202, 79, 0.466);
-	border: 0;
-}
+
+
+
+
+
 
 #chiSiamo{
 	padding-top: 60px;
