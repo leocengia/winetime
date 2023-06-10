@@ -68,8 +68,6 @@ ul, ol {
 }
 ul, ol {
 	padding: 0;
-	webkit-padding: 0;
-	moz-padding: 0;
 }
 hr {
 	height: 2px;
@@ -347,7 +345,6 @@ ol.type li a:hover {
 }
 .hover-bg:hover .hover-text>h4 {
 	opacity: 1;
-	-webkit-backface-visibility: hidden;
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
@@ -661,6 +658,7 @@ span:nth-child(4) {
 
 
 /*SEZIONE ABOUT US importata da barber (da sistemare)*/
+
 .about-tab{ 
 	padding-top: 6%; /*spazio sopra alla sezione about us*/ 
 	padding-bottom: 6%; /*spazio sotto alla sezione about us*/ 
@@ -740,12 +738,10 @@ span:nth-child(4) {
 	margin: 10px;
 }
 
-
 #btn-cell{
 	background-color: #9e6900;
 	border: 0;
 	background: url(../img/img_custom/menu.png) no-repeat center center; 
-	-webkit-background-size: cover;
 }
 
 @media only screen and (max-width: 600px) {
@@ -753,6 +749,10 @@ span:nth-child(4) {
 		width: 40%;
 		margin: 0;
 		margin-bottom: 10px;
+	}
+
+	#btnAboutContainer{
+		padding-bottom: 0;
 	}
 
 	.btn-about{
@@ -793,13 +793,14 @@ span:nth-child(4) {
 
 .grid-container {
 	display: grid; 
-  grid-auto-flow: row dense; 
-  grid-auto-columns: 1fr; 
-  grid-auto-rows: 1fr; 
-  grid-template-columns: 5% 45% 45% 5%; 
-  gap: 0px 0px; 
-	padding-top: 50px;
-	padding-bottom: 120px;
+  	grid-auto-flow: row dense; 
+  	grid-auto-columns: 1fr; 
+  	grid-auto-rows: 1fr; 
+  	grid-template-columns: 4% 45% 2% 45% 4%; 
+  	gap: 0px 0px; 
+	padding-top: 20px;
+	padding-bottom: 85px;
+	background-color: #ffffff;
   }
   
   .grid-item {
@@ -827,14 +828,25 @@ span:nth-child(4) {
 	  }
   }
 
-
+/*gestione degli elementi della gr*/
 #cont1{
-	background-color: #000000;
+	background-color: #ffffff;
 	padding: 0px;
 }
-
 #cont2{
-	background-color: #262626;
+	background-color: #ffffff;
+	padding: 0px;
+}
+#cont3{
+	background-color: #ffffff;
+	padding: 0px;
+}
+#cont4{
+	background-color: #ff0000;
+	padding: 0px;
+}
+#cont5{
+	background-color: #ffffff;
 	padding: 0px;
 }
 
