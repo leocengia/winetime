@@ -271,7 +271,21 @@ ol.type li a:hover {
 	background-color: #9e6900;
 }
 @media only screen and (max-width: 600px) {
+
+	ol.type li {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
 	
+	ul.cat {
+		width: 100%;
+	}
+
+	ol.type li a{
+		width: 100%;
+	}
 }
 .isotope-item {
 	z-index: 2
@@ -814,10 +828,11 @@ span:nth-child(4) {
 
   @media only screen and (max-width: 600px) {
 	.grid-container {
+		grid-template-columns: 0% 45% 1% 45% 0%; 
 		display: grid;
-	grid-template-columns: none;
-	padding-top: 120px;
-	padding-bottom: 120px;
+		grid-template-columns: none;
+		padding-top: 20px;	
+		padding-bottom: 85px;
 	}
 
 	.grid-item {
@@ -829,7 +844,7 @@ span:nth-child(4) {
 	  }
   }
 
-/*gestione degli elementi della gr*/
+/*gestione degli elementi della grid*/
 #cont1{
 	background-color: #ffffff;
 	padding: 0px;
@@ -888,7 +903,7 @@ span:nth-child(4) {
 
 #contact2 {
 	padding: 0 0 120px 0;
-	padding-bottom: 10%;
+	padding-bottom: 6%;
 	margin-top: 7%;
 	background-color: #740000;
 }
