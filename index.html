@@ -96,7 +96,7 @@
 <!-- SEZIONE CHE CONTIENE ABOUT US BARBER (css importato ma da modificare), funziona già anyway -->
     <div id="chiSiamo" class="about-tab">
       <div class="tab-content">
-        <ul class="nav nav-tabs">
+        <ul id="btnAboutContainer" class="nav nav-tabs">
           <li id="ffm" class="active"><a class="btn-about" href="#tab_a" data-toggle="tab">CHI SIAMO</a></li>
           <li id="ffm"><a class="btn-about" href="#tab_b" data-toggle="tab">DOVE TROVARCI</a></li>
           <li id="ffm"><a class="btn-about" href="#tab_c" data-toggle="tab">IL VINO</a></li>		
@@ -178,7 +178,7 @@
     <div class="overlay">
       <h2>Galleria</h2>
       <hr>
-      <p>Il meglio dei nostri prodotti...</p>
+      <p>Il meglio dei nostri prodotti</p>
     </div>
   </div>
   <div class="container">
@@ -285,7 +285,17 @@
   </div>
 </div>
 
-<!-- Contact Section --> 
+<!-- Map e Orari Section --> 
+<div id="mappaguzza">
+
+<div class="section-title text-center center">
+  <div class="overlay">
+    <h2>MAPPA & STOCAZZO</h2>
+    <hr>
+    <p>Scopri dove trovarci</p>
+  </div>
+</div>
+
 <section>
 <div id="contact" class="grid-container">
   <div id="cont1" class="grid-item">
@@ -295,19 +305,12 @@
     </div>
   </div>
   <div style="color: #fff;" id="cont2" class="grid-item">
-    <h3 style="color: #fff;"><strong>ORARI DI APERTURA</strong></h3>
-    <i class="fa-solid fa-wine-bottle" style="color: #ffffff;"></i>
-    <p>Lun - Dom</p>
-    <p>12:00 - 15:00</p>
-    <p>18:30 - 23:30</p>
-
-    <button id="btn-phone"><i class="fa fa-phone"></i>+39 02 25565222</button>
-  </div>
-  <div id="cont3" class="grid-item">
-    ..
-    </div>
 </div>
 </section>
+
+</div>
+
+
 
 <!-- ======= Contact Us Section ======= -->
 <section id="contact2" class="contact2 section-bg">
@@ -322,33 +325,34 @@
 
           <div id="boh" class="col-lg-6 info d-flex flex-column align-items-stretch">
             <i class="fa fa-map"></i>
-            <h4>Address</h4>
-            <p>Via Macmahon<br>Milano, Italia 20122</p>
+            <h4>Indirizzo</h4>
+            <p>Piazza della Trivulziana, 4<br>Milano, Italia 20126</p>
           </div>
           <div id="boh" class="col-lg-6 info info-bg d-flex flex-column align-items-stretch">
             <i class="fa fa-phone"></i>
             <h4>Chiamaci</h4>
-            <p>+39 346 212 3657</p>
+            <p>+39 02 25565222</p>
           </div>
         </div>
 
       </div>
 
-      <div class="col-lg-6 d-flex align-items-stretch contact-form-wrap">
+      <div id="formss" class="col-lg-6 d-flex align-items-stretch contact-form-wrap">
+        <h1 style="text-align: center;">CONTATTACI</h1>
         <form action="https://formspree.io/f/mnqrkjeb" method="POST" enctype="text/plain" role="form" class="php-email-form">
           <div class="row">
             <div class="col-md-6 form-group">
               <label>Nome e Cognome</label>
-              <input type="text" name="nome" class="form-control" id="nome" placeholder="Your Name" required>
+              <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" required>
             </div>
             <div class="col-md-6 form-group mt-3 mt-md-0">
               <label>Email</label>
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
             </div>
           </div>
           <div class="form-group mt-3">
             <label>Oggetto della richiesta</label>
-            <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
+            <input type="text" name="subject" class="form-control" id="subject" placeholder="Oggetto" required>
           </div>
           <div class="form-group mt-3">
             <label>Messaggio</label>
@@ -376,7 +380,7 @@
       <div class="row">
 
         <div class="col-lg-3 col-md-6 footer-info">
-          <h3 style="color:white;">WineTime</h3>
+          <h3 style="color:white; margin-top: 10px;">WINETIME</h3>
           <p>
             Piazza della Trivulziana, 4
           <br>
