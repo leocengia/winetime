@@ -126,7 +126,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #ffffff;
 }
 .on {
-	background-color: #262626 !important;
+	background-color: #A11D2A !important;
 	padding: 0 !important;
 	padding: 10px 0 !important;
 }
@@ -150,7 +150,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .section-title .overlay {
 	padding: 80px 0;
-	background: rgba(0, 0, 0, 0.85);
+	/*background: rgba(168, 29, 29, 0,85); */
+	background-color: #A11D2A;
+
 }
 .section-title p {
 	font-size: 22px;
@@ -216,11 +218,19 @@ span {
 
 .intro p {
 	color: #fff;
-	font-size: 32px;
+	font-size: 2vw;
 	font-weight: 300;
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
+@media only screen and (max-width: 600px) {
+
+	.intro p {
+		font-size: 17px;
+	}
+
+}
+
 header .intro-text {
 	padding-top: 270px;
 	padding-bottom: 200px;
@@ -233,7 +243,7 @@ header .intro-text {
 	padding-bottom: 0%;
 }
 #portfolio .section-title {
-	background: #444 url(../img/img_custom/gallery-bg2.png) center center no-repeat fixed;
+	background: #A11D2A url(../img/img_custom/gallery-bg2.png) center center no-repeat fixed;
 	background-size: cover;
 	margin-bottom: 50px;
 }
@@ -733,7 +743,7 @@ span:nth-child(4) {
 
 @media only screen and (max-width: 600px) {
 	#ffm{
-		width: 40%;
+		width: 40%;	
 		margin: 0;
 		margin-bottom: 10px;
 	}
@@ -805,26 +815,6 @@ span:nth-child(4) {
 	text-align: center;
 	position: relative;
   }
-
-/*
-  @media only screen and (max-width: 600px) {
-	.grid-container {
-		display: grid;
-		grid-template-columns: 1fr;
-		background-color: #000;
-		padding: 4%;
-		justify-items: normal;
-		gap: 0px;  
-	
-	}
-	.grid-item {
-		background-color: rgba(255, 255, 255, 0.8);
-		text-align: center;
-		position: relative;
-	  }
-  	
-  }
-*/
 
 /* versione di ChatGPT */
 .grid-container {
@@ -946,10 +936,10 @@ span:nth-child(4) {
 	padding: 0 0 120px 0;
 	padding-bottom: 6%;
 	margin-top: 7%;
-	background-color: #740000;
+	background-color: #000000;
 }
 #contact2 .section-title {
-	background: #444 url(../img/img_custom/gallery-bg2.png) center center no-repeat fixed;
+	background: #A11D2A url(../img/img_custom/gallery-bg2.png) center center no-repeat fixed;
 	background-size: cover;
 	margin-bottom: 100px;
 }
