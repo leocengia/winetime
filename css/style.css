@@ -736,9 +736,15 @@ span:nth-child(4) {
 }
 
 #btn-cell{
-	background-color: #9e6900;
+	position: inherit;
 	border: 0;
-	background: url(../img/img_custom/menu.png); 
+	margin: 10;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	background-image: url("../img/img_custom/menu.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 @media only screen and (max-width: 600px) {
@@ -936,7 +942,7 @@ span:nth-child(4) {
 	padding: 0 0 120px 0;
 	padding-bottom: 6%;
 	margin-top: 7%;
-	background-color: #000000;
+	background-color: #ffffff;
 }
 #contact2 .section-title {
 	background: #A11D2A url(../img/img_custom/gallery-bg2.png) center center no-repeat fixed;
@@ -957,21 +963,38 @@ span:nth-child(4) {
 	z-index: 2;
   }
 
-  #boh{
-	width: 100%;
+
+  
+  /*Codice generato con ChatGPT per centrare la parte dei contatti*/
+  .center-contatti {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; /* Aggiunta della direzione delle colonne */
+	height: 100vh;
   }
+  
+  .center-contatti > .centered-div {
+	width: 80%;
+	margin: 0 auto;
+  }
+  
+  
+
+
+
   
   .contact2 .info {
 	padding: 60px;
-	background: #fff;
+	background: #feca9f;
 	color: #000000;
 	text-align: center;
-	box-shadow: -5px -5px 40px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: -5px -5px 40px 0 rgba(255, 255, 255, 0.91);
   }
   
   .contact2 .info i {
 	font-size: 48px;
-	color: #262626;
+	color: #000000;
 	margin-bottom: 15px;
   }
   
@@ -989,17 +1012,22 @@ span:nth-child(4) {
   }
   
   .contact2 .info-bg {
-	background: white;
+	background: feca9f;
   }
   
   .contact2 .contact2-form-wrap {
-	box-shadow: 10px -5px 40px 0 rgba(0, 0, 0, 0.1);
-	background: #fff;
+	box-shadow: -5px -5px 40px 0 rgba(255, 255, 255, 0.91);
+	background: feca9f;
 	position: relative;
 	z-index: 1;
 	padding: 30px;
   }
   
+  #messaggiaci{
+
+	
+  }
+
   .contact2 .php-email-form {
 	width: 100%;
   }
@@ -1072,12 +1100,12 @@ span:nth-child(4) {
   .contact2 .php-email-form button[type=submit] {
 	background: #fff;
 	padding: 10px 24px;
-	color: #686868;
+	color: #bc3838;
 	transition: 0.4s;
   }
   
   .contact2 .php-email-form button[type=submit]:hover {
-	background: #858585;
+	background: #A11D2A;
 	color: #fff;
   }
   
