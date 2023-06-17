@@ -656,6 +656,14 @@ span:nth-child(4) {
 
 /*SEZIONE ABOUT US importata da barber (da sistemare)*/
 
+.img-responsive{
+    position:relative;
+    height:300px;
+	width: 1000px;
+	background-image: url("../img/img_custom/about1.png");
+	background-size: cover;
+}
+
 .about-tab{ 
 	padding-top: 6%; /*spazio sopra alla sezione about us*/ 
 	padding-bottom: 6%; /*spazio sotto alla sezione about us*/ 
