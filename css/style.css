@@ -916,6 +916,12 @@ span:nth-child(4) {
 		padding: 0px;
 		height: 0%;
 	}
+	#SezioniForm{
+		background-color: #A11D2A;
+		
+		margin-right: 0;
+		margin-left: 0;
+	}
 }
 
 
@@ -971,38 +977,21 @@ span:nth-child(4) {
 	z-index: 2;
   }
 
-
-  
-  /*Codice generato con ChatGPT per centrare la parte dei contatti*/
-  .center-contatti {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column; /* Aggiunta della direzione delle colonne */
-	height: 100vh;
+  #boh{
+	width: 100%;
   }
-  
-  .center-contatti > .centered-div {
-	width: 80%;
-	margin: 0 auto;
-  }
-  
-  
-
-
-
   
   .contact2 .info {
 	padding: 60px;
-	background: #feca9f;
+	background: #fff;
 	color: #000000;
 	text-align: center;
-	box-shadow: -5px -5px 40px 0 rgba(255, 255, 255, 0.91);
+	box-shadow: -5px -5px 40px 0 rgba(0, 0, 0, 0.1);
   }
   
   .contact2 .info i {
 	font-size: 48px;
-	color: #000000;
+	color: #A11D2A;
 	margin-bottom: 15px;
   }
   
@@ -1020,22 +1009,17 @@ span:nth-child(4) {
   }
   
   .contact2 .info-bg {
-	background: feca9f;
+	background: white;
   }
   
   .contact2 .contact2-form-wrap {
-	box-shadow: -5px -5px 40px 0 rgba(255, 255, 255, 0.91);
-	background: feca9f;
+	box-shadow: 10px -5px 40px 0 rgba(0, 0, 0, 0.1);
+	background: #fff;
 	position: relative;
 	z-index: 1;
 	padding: 30px;
   }
   
-  #messaggiaci{
-
-	
-  }
-
   .contact2 .php-email-form {
 	width: 100%;
   }
@@ -1043,7 +1027,7 @@ span:nth-child(4) {
   .contact2 .php-email-form .error-message {
 	display: none;
 	color: #fff;
-	background: #ed3c0d;
+	background: #000000;
 	text-align: left;
 	padding: 15px;
 	font-weight: 600;
@@ -1108,7 +1092,7 @@ span:nth-child(4) {
   .contact2 .php-email-form button[type=submit] {
 	background: #fff;
 	padding: 10px 24px;
-	color: #bc3838;
+	color: #000000;
 	transition: 0.4s;
   }
   
@@ -1143,6 +1127,7 @@ span:nth-child(4) {
 	color: white;
 	padding-bottom: 20px;
 	border: 0;
+	text-align: center;
   }
 
 
@@ -1152,3 +1137,12 @@ span:nth-child(4) {
 	background-image: url("../img/about.jpg");
 	height: 350px
   }
+
+  #messaggiaci{
+	color: #000;
+  }
+
+#SezioniForm{
+	background-color: #A11D2A;
+	margin-right: 0;
+}

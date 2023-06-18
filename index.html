@@ -279,67 +279,61 @@
   </div>
 
   <div class="container-fluid">
-    
-    
+
     <div class="row">
 
-      
-      <div class="center-contatti flex-column">
-        <div class="col-lg-6 info align-items-stretch justify-content-center align-items-center centered-div">
-          <i class="fa fa-map"></i>
-          <h4>Indirizzo</h4>
-          <p>Piazza della Trivulziana, 4<br>Milano, Italia 20126</p>
+      <div class="col-lg-6 d-flex align-items-stretch infos">
+
+        <div class="row">
+
+          <div id="boh" class="col-lg-6 info d-flex flex-column align-items-stretch">
+            <i class="fa fa-map"></i>
+            <h4>Indirizzo</h4>
+            <p>Piazza della Trivulziana, 4<br>Milano, Italia 20126</p>
+          </div>
+          <div id="boh" class="col-lg-6 info info-bg d-flex flex-column align-items-stretch">
+            <i class="fa fa-phone"></i>
+            <h4>Chiamaci</h4>
+            <p>+39 02 25565222</p>
+          </div>
         </div>
-        <div class="col-lg-6 info info-bg align-items-stretch centered-div">
-          <i class="fa fa-phone"></i>
-          <h4>Chiamaci</h4>
-          <p>+39 02 25565222</p>
-        </div>
+
       </div>
 
-    <div class="container text-center">
+      <div id="SezioniForm" class="container text-center">
       <div id="messaggiaci">
         <h3>Mandaci un messaggio:</h3>
       </div>
-      <div id="formss" class="col-lg-6 d-flex align-items-stretch contact-form-wrap mx-auto">
+
+      <div id="formss" class="col-lg-6 d-flex align-items-stretch contact-form-wrap">
+        
         <form action="https://formspree.io/f/mnqrkjeb" method="POST" enctype="text/plain" role="form" class="php-email-form">
           <div class="row">
             <div class="col-md-6 form-group">
-              <label>Nome e Cognome</label>
               <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" required>
             </div>
             <div class="col-md-6 form-group mt-3 mt-md-0">
-              <label>Email</label>
               <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
             </div>
           </div>
           <div class="form-group mt-3">
-            <label>Oggetto della richiesta</label>
             <input type="text" name="subject" class="form-control" id="subject" placeholder="Oggetto" required>
           </div>
           <div class="form-group mt-3">
-            <label>Messaggio</label>
-            <textarea class="form-control" name="msg" id="msg" rows="8" required></textarea>
+            <textarea class="form-control" name="msg" id="msg" rows="8" placeholder="Messaggio" required> </textarea>
           </div>
-          <div class="my-3">
-            <div class="sent-message">Il tuo messaggio è stato inviato, Grazie!</div>
-          </div>
+          <div class="my-3"> <div class="sent-message">Il tuo messaggio è stato inviato, Grazie!</div> </div>
           <div class="my-3" style="display: none;">
             <div class="loading">Caricamento</div>
             <div style="display: none;" class="error-message"></div>
             <div class="sent">Il tuo messaggio è stato inviato, Grazie!</div>
           </div>
-          <div class="text-center">
-            <button type="submit">Invia messaggio</button>
-          </div>
+          <div class="text-center"><button type="submit">Invia messaggio</button></div>
         </form>
       </div>
-    </div>
-    
-
 
     </div>
-
+  </div>
   </div>
 </section><!-- End Contact Us Section -->
 
