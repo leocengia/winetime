@@ -917,8 +917,6 @@ span:nth-child(4) {
 		height: 0%;
 	}
 	#SezioniForm{
-		background-color: #A11D2A;
-		
 		margin-right: 0;
 		margin-left: 0;
 	}
@@ -1143,6 +1141,5 @@ span:nth-child(4) {
   }
 
 #SezioniForm{
-	background-color: #A11D2A;
 	margin-right: 0;
 }
