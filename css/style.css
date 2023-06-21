@@ -1124,6 +1124,8 @@ span:nth-child(4) {
   .item{
 	position: fixed;
 	background-image: url("../img/about.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 	height: 350px
   }
 
