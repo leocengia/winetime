@@ -801,34 +801,13 @@ span:nth-child(4) {
     width:100%;
     position:absolute;
 }
-
-.grid-container {
-	display: grid; 
-  	grid-auto-flow: row dense; 
-  	grid-auto-columns: 1fr; 
-  	grid-auto-rows: 1fr; 
-  	grid-template-columns: 4% 45% 2% 45% 4%; 
-  	gap: 0px 0px; 
-	padding-top: 20px;
-	padding-bottom: 85px;
-	background-color: #ffffff;
-  }
-  
-  .grid-item {
-	background-color: rgba(255, 255, 255, 0.8);
-	padding: 20px;
-	font-size: 30px;
-	text-align: center;
-	position: relative;
-  }
-
 /* versione di ChatGPT */
 .grid-container {
 	display: grid;
 	grid-template-columns: 4% 45% 2% 45% 4%;
 	gap: 0px;
 	padding-top: 20px;
-	padding-bottom: 85px;
+	padding-bottom: 20px;
 	background-color: #ffffff;
   }
   
@@ -839,7 +818,6 @@ span:nth-child(4) {
 	text-align: center;
 	position: relative;
   }
-  
   @media only screen and (max-width: 600px) {
 	.grid-container {
 	  display: block;
@@ -847,7 +825,7 @@ span:nth-child(4) {
 	}
   
 	.grid-item {
-	  margin-bottom: 10px;
+	  margin-bottom: 0px;
 	}
   }
   
@@ -908,8 +886,6 @@ span:nth-child(4) {
 		height: 0%;
 	}
 	#SezioniForm{
-		margin-right: 0;
-		margin-left: 0;
 	}
 }
 
@@ -1113,10 +1089,29 @@ span:nth-child(4) {
   }
 
   #formss{
-	color: white;
-	padding-bottom: 20px;
-	border: 0;
-	text-align: center;
+	padding-top: 5%;
+  }
+
+
+@media (min-width: 1200px) {
+	#formss{
+		position: relative;
+		color: white;
+		border: 0;
+		text-align: center;
+		width: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 5%;
+		padding-top: 7%;
+		height: 90%;
+	  }
+	
+	  #SezioniForm{
+		display:table-cell;
+		position: relative;
+		height: 100%;
+	}
   }
 
 
@@ -1128,11 +1123,3 @@ span:nth-child(4) {
 	background-repeat: no-repeat;
 	height: 350px
   }
-
-  #messaggiaci{
-	color: #000;
-  }
-
-#SezioniForm{
-	margin-right: 0;
-}
