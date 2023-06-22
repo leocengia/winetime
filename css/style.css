@@ -703,7 +703,7 @@ span:nth-child(4) {
 .about-tab .nav-tabs > li.active > a{
 	border: none;
 	background: #ffd278;
-	color: #ffffff;
+	color: #000000;
 }
 
 .about-tab .tab-content > .tab-pane{
@@ -720,7 +720,7 @@ span:nth-child(4) {
 
 .btn-about{
 	background-color: #eee;
-	color: #999;
+	color: #000000;
 	font-weight: 500;
 	font-size: 14px;
 	letter-spacing: 0.5px;

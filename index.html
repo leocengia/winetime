@@ -84,7 +84,8 @@
 
             <p>Vino & Cucina Italiana</p>
 
-            <a href="#chiSiamo" class="btn btn-custom btn-lg page-scroll">scopri di più</a> </div>
+            <a href="#chiSiamo" 
+            >scopri di più</a> </div>
 
             
               <!-- round è la freccia animata in css-->
@@ -179,16 +180,14 @@
               </div>
               <div id="ttx" class="col-xs-12 col-md-6">
                   <h2>Il nostro menù</h2>
-                  <p>Abbiamo scelto di adottare un pratico <strong>menù digitale</strong>. Scannerizzando il <strong>QR code</strong>alla sinistra di questo testo 
+                  <p>Abbiamo scelto di adottare un pratico <strong>menù digitale</strong>. Scannerizzando il <strong>QR code</strong> alla sinistra di questo testo 
                     è potrai consultare la nostra offerta e scegliere cosa ordinare!
                   </p>
                   <p>
                     Se desideri consultare il menù senza scannerizzare il QR code, ecco un pratico pulsante:
                   </P>
-                  <button>
+                  <a href="https://mobile.my-table.it/mytable/menu/11" target="_blank" class="btn btn-custom btn-lg page-scroll">scopri il menù</a>
 
-                    
-                  </button>
               </div>
             </div>
         </div>
@@ -309,7 +308,7 @@
           <div id="boh" class="col-lg-6 info info-bg d-flex flex-column align-items-stretch">
             <i class="fa fa-phone"></i>
             <h4>Chiamaci</h4>
-            <p>+39 02 25565222</p>
+            <p>+39 3783043761</p>
           </div>
         </div>
 
@@ -322,28 +321,27 @@
           <h3 style="padding: 0;
           margin: 0; ">Mandaci un messaggio:</h3>
           <br>
-        <form action="https://formspree.io/f/mnqrkjeb" method="POST" enctype="text/plain" role="form" class="php-email-form">
+        <form id="my-form" action="https://formspree.io/f/mknlwwop" method="POST">
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" required>
             </div>
             <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+              <input type="email" name="email" class="form-control" placeholder="Email" required/>
             </div>
           </div>
           <div class="form-group mt-3">
             <input type="text" name="subject" class="form-control" id="subject" placeholder="Oggetto" required>
           </div>
           <div class="form-group mt-3">
-            <textarea class="form-control" name="msg" id="msg" rows="8" placeholder="Messaggio" required> </textarea>
+            <textarea type="text" class="form-control" name="message" id="msg" rows="8" placeholder="Messaggio" required> </textarea>
           </div>
-          <div class="my-3"> <div class="sent-message">Il tuo messaggio è stato inviato, Grazie!</div> </div>
-          <div class="my-3" style="display: none;">
-            <div class="loading">Caricamento</div>
-            <div style="display: none;" class="error-message"></div>
-            <div class="sent">Il tuo messaggio è stato inviato, Grazie!</div>
+          <div class="text-center">
+            <button id="my-form-button" class="btn btn-custom btn-lg page-scroll">INVIA MESSAGGIO</button>
           </div>
-          <div class="text-center"><button type="submit">Invia messaggio</button></div>
+          
+          <p style="color: #000000;" id="my-form-status"></p>
+
         </form>
       </div>
     </div>
@@ -366,7 +364,7 @@
           <br>
           MI, Italia 20126<br><br>
             <strong>Phone:</strong> +39 02 25565222<br>
-            <strong>Email:</strong> sushiidea@visiesorrisi.com<br>
+            <strong>Email:</strong> winetimemilano@visiesorrisi.com<br>
           </p>
           <br>
           <div class="social-links mt-3">
@@ -409,6 +407,39 @@
   </div>
 </footer><!-- End Footer -->
 
+
+<script>
+  var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
