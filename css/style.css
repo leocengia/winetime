@@ -865,14 +865,13 @@ span:nth-child(4) {
 	}
 	#cont2{
 		padding: 0px;
-		border: 6px;
-		border-style: groove;
-		border-color: #000;
+		border: 0px;
 	}
 	#cont3{
 		background-color: #59ff00;
 		padding: 0px;
 		height: 10%;
+		margin-top: 7%;
 	}
 	#cont4{
 		padding: 0px;
