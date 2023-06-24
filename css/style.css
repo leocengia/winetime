@@ -1113,7 +1113,7 @@ span:nth-child(4) {
 	}
   }
 
-.container .ciao{
+#ciao{
 	padding-top: 7%;
 	padding-bottom: 7%;
 }
