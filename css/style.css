@@ -772,7 +772,6 @@ span:nth-child(4) {
 #mappaguzza {
 	padding: 0 0 120px 0;
 	padding-bottom: 0%;
-	margin-top: 7%;
 }
 #mappaguzza .section-title {
 	background: #444 url(../img/img_custom/gallery-bg2.png) center center no-repeat fixed;
@@ -919,7 +918,7 @@ span:nth-child(4) {
 
 #contact2 {
 	padding: 0 0 120px 0;
-	padding-bottom: 6%;
+	padding-bottom: 7%;
 	margin-top: 7%;
 	background-color: #ffffff;
 }
@@ -1114,6 +1113,9 @@ span:nth-child(4) {
 	}
   }
 
-
+.container .ciao{
+	padding-top: 7%;
+	padding-bottom: 7%;
+}
 
 /*carosello Bello*/
